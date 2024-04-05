@@ -4,19 +4,27 @@
     flex-direction: column;
     align-items:center;
 
-    &__image{
+    &__image{       
         height: 63px;
         margin: 95px 35px 0 35px;
+        @media (min-width:768px){
+            height: 107px;
+            margin: 350px 175px 31px 175px;
+            padding: 2px 0 0;
+        }
     }
 
     &__title{
-    
         padding-top:35px;
         color: $contrastColor;
         font-family:  $secondaryFont;
         font-size: 19.2px;
         font-weight: 900;
         text-align: center;
+        @media (min-width:768px){
+            font-size: 24px;
+            padding-top: 0;
+        }
     }
 
     &__text{
@@ -27,6 +35,11 @@
         text-align: center;
         color: $darkColor;
         margin-bottom: 17.8px;
+        @media (min-width:768px){
+            font-size: 16px;
+            width: 331px;
+            height: 48px;
+        }
     }
 
     &__article{
@@ -40,6 +53,12 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
+        @media (min-width:768px){
+            width: 325px;
+            height: 86px;
+            margin: 27px 47px 0;
+            padding: 15px 20px 10px;
+        }
 
         &--section{
             width: 60px;
@@ -49,6 +68,12 @@
             font-size: 12.8px;
             text-align: center;
             color:$titleColor;
+            @media (min-width:768px){
+                width: 75px;
+                height: 61px;
+                margin: 0 30px 0 0;
+                font-size: 16px;
+            }
         }
     }
 
@@ -65,5 +90,16 @@
         text-align: center;
         color: $white;
         text-decoration: none;
+        @media (min-width:768px){
+            margin: 186px 75px 59px 65px;
+        }
+    }
+}
+
+.awesome{
+    color: $contrastColor;
+    font-size: 22.4px;
+    @media (min-width:768px){
+        font-size: 28px;
     }
 }
