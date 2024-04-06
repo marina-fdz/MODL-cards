@@ -47,9 +47,9 @@
         height: 73.8px;
         margin: 17.8px 0 0.2px;
         padding: 15px 20px 9.8px 20px;
-        opacity: 0.21;
+        // opacity: 0.21;
         border-radius: 4px;
-        border: solid 1.6px $contrastColor;
+        border: solid 1.6px rgba(225,115,51,0.21);
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
