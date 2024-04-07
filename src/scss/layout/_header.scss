@@ -1,0 +1,16 @@
+.page__header{
+    width: 100%;
+    height: 11.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+    @media all and (width > 768px){
+        padding: 40px;
+        justify-content: flex-start;
+    }
+
+    &--img{
+        width: 20.1rem;
+    }
+}
