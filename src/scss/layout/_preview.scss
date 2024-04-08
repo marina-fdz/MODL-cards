@@ -4,16 +4,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     @media all and (width > 768px){
         grid-area: 1 / 2 / 3 / 3;
         margin: 20px 40px 20px 0px;
         border-radius: 6px;
+        padding: 0px 45px 100px;
     }
 
     & .card{
         width: fit-content;
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
 
         &__reset{
             padding-top: 0.5rem;
