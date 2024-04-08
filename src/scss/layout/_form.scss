@@ -51,51 +51,71 @@
         width: 100%;
         height: 100%;
         opacity: 0;
+       
 
     }
     &-paragraph{
-        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 5px;
         color: $white;
-        padding: 5px;
+     
+       
+        
     }
 
 
 
 }
+
+.section-create{
+    display: flex;
+    justify-content: center;
+}
+.btn-create{
+    background-color: $contrastColor;
+    width: 199px;
+    height: 50px;
+    border-radius:12px;
+    border: 0;
+    font-size: 18px;
+    color: $white;
+    margin-top: 30px;
+
+}
+
 
 /*Estilos del icono "ventana", diseña y el icono flecha*/
 .fieldset {
-    min-width: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0, 20px;
+    
     font-family: $mainFont;
     color: $titleColor;
-
-    &__legend { 
-        display: flex;
-        margin-top: 20px;
-        font-size: 18px;
-        font-weight: 600;
-        padding-right: 130px;
-
-        & .fa-regular {
-            color: $contrastColor;
-            transform: scale(85%);
-        }
-        
-        & .fa-solid {
-            color: $titleColor;
-            transform: translate(122px);
-        }
-
-    }
-
 
 }
 
 
+.legend{
+    display: flex;
+    justify-content: space-between;
+  font-size: 18px;
+  padding: 0 20px;
+  margin-top: 10px;
+    &-icon{
+        font-family: $mainFont;
+        font-size: 18px;
+        font-weight: 600;
+        color: $titleColor;
+
+    }
+}
+.fa-regular{
+    color: $contrastColor;
+    margin-right: 5px;
+}
+.fa-solid{
+    color: $titleColor;
+}
 
 
 
@@ -104,6 +124,7 @@
     font-size: 14px;
     margin-top: 20px;
     display: flex;
+    justify-content: center;
     gap: 75px;
 }
 
