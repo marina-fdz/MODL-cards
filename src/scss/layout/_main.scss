@@ -1,0 +1,12 @@
+.main__wrapper{
+    background-color: $darkWhite;
+    // background-image: linear-gradient(to bottom, $darkWhite, $white);
+    min-height:calc(100vh - 22.1rem); //100vh - la altura del header + footer
+    @media all and (width > 768px){
+        min-height:calc(100vh - 17.1rem);
+        display: grid;
+        grid-template-columns: 39.9rem auto;
+        grid-template-rows: 1fr;
+
+    }
+}
