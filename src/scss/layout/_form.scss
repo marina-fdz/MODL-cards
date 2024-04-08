@@ -57,4 +57,177 @@
         color: $white;
         padding: 5px;
     }
+
+
+
+/*Estilos del icono "ventana", diseña y el icono flecha*/
+.fieldset {
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0, 20px;
+    font-family: $mainFont;
+    color: $titleColor;
 }
+
+.fieldset__legend { 
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    padding-right: 130px;
+}
+
+.fa-regular {
+    color: $contrastColor;
+    transform: scale(85%);
+}
+
+.fa-solid {
+    color: $titleColor;
+    transform: translate(122px);
+}
+
+.fieldset__design {
+    font-size: 14px;
+    margin-top: 20px;
+    display: flex;
+    gap: 75px;
+}
+
+.fieldset__design--colors {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.color-one {
+    display: flex;
+}
+
+.onecol {
+    transform: scale(1.2);
+}
+
+.color-one__1 {
+    width: 30px;
+    height: 25px;
+    padding: 10px 0;
+    margin-left: 5%;
+    background-color: $darkColor;
+}
+
+.color-one__2 {
+    width: 30px;
+    height: 25px;
+    background-color: $mediumColor;
+}
+
+.color-one__3 {
+    width: 30px;
+    height: 25px;
+    padding: 10px 0;
+    background-color: $neutralColor;
+}
+
+.color-two {
+    display: flex;
+}
+
+.color-two__1 {
+    width: 30px;
+    height: 25px;
+    padding: 10px 0;
+    margin-left: 5%;
+    background-color: $driedBold;
+}
+
+.color-two__2 {
+    width: 30px;
+    height: 25px;
+    background-color: $rustyRed;
+}
+
+.color-two__3 {
+    width: 30px;
+    height: 25px;
+    padding: 10px 0;
+    background-color: $tomato;
+}
+
+.color-three {
+    display: flex;
+}
+.color-three__1 {
+    width: 30px;
+    height: 25px;
+    padding: 10px 0;
+    margin-left: 5%;
+    background-color: $slate;
+}
+
+.color-three__2 {
+    width: 30px;
+    height: 25px;
+    background-color: $fadedOrange;
+}
+
+.color-three__3 {
+    width: 30px;
+    height: 25px;
+    padding: 10px 0;
+    background-color: $lightGreyBlue;
+}
+
+/*Rellena*/
+
+
+
+/*Comparte*/
+
+/*la tarjeta ha sido creada*/
+
+.card{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__create{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__title{
+    text-align: center;
+    color: $titleColor;
+    font-size: 18px;
+}
+
+.card__x{
+    font-size: 14px;
+    color: $white;
+    background-color: $azure;
+    border: none;
+    width: 181px;
+    margin: 10px 33px 30px 29px;
+    padding: 5px 9px 6px 10.5px;
+    border-radius: 3px;
+    box-shadow: 0 0 4px;
+    font-family: $mainFont;
+}
+
+.card__link{
+    font-size: 12px;
+    color: $contrastColor;
+    width: 292px;
+    margin-top: 5px;
+    text-align: center;
+}
+
