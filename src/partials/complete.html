@@ -1,8 +1,33 @@
 <fieldset>
     <div class="form">
-        <h2><i class="fa-regular fa-keyboard"></i> RELLENA</h2>
+        <legend><i class="fa-regular fa-object-ungroup">
+        </i>
+        RELLENA</legend>
         <i class="fa-solid fa-angle-up"></i>
+
+        <section class="complete">
+            <form action="sign" class="complete_form">
+                <label class="complete_form-label"  for="firstName">Nombre completo</label>
+                <input class="complete_form-imput" placeholder="Ej: Sally Jill" id="firstName" type="text" name="firstName"  />
+                <label class="complete_form-label"  for="job">Puesto</label>
+                <input class="complete_form-imput" placeholder="Ej: Front-end unicorn" id="job" type="text" name="job"  />
+                <div class="complete-button">
+                    <label class="complete-button-paragraph" for="addImage">Añadir imagen</label>
+                    <input class="complete-button-input" type="file" id="addImage" >
+                </div>
+                <label class="complete_form-label"  for="emailAddress">Email</label>
+                <input class="complete_form-imput" placeholder="Ej: sally-hill@gmail.com" id="emailAddress" type="email" name="email"  />
+                <label class="complete_form-label"  for="telNUmber">Teléfono</label>
+                <input class="complete_form-imput" placeholder="Ej: 555-555-555" id="telNUmber" type="tel" name="tel"  />
+                <label class="complete_form-label"  for="socialMedia">Linkedin</label>
+                <input class="complete_form-imput" placeholder="Ej: Linkedin.com/in/sally.hill" id="socialMedia" type="text" name="socialMedia"  />
+                <label class="complete_form-label"  for="git">Github</label>
+                <input class="complete_form-imput" placeholder="Ej: @sally-hill" id="git" type="text" name="git"  />
+
+            </form>
+        </section>
       
             
     </div>
 </fieldset>
+
