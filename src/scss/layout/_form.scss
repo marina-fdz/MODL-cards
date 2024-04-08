@@ -34,8 +34,7 @@
     width: 140px;
     height: 30px;
     margin-bottom: 20px;
-
-    &-input {
+    &-input{
         position: absolute;
         top: 0;
         left: 0;
@@ -44,49 +43,57 @@
         width: 100%;
         height: 100%;
         opacity: 0;
-    }
 
-    &-paragraph {
+    }
+    &-paragraph{
         text-align: center;
         color: $white;
         padding: 5px;
     }
+
+
+
 }
 
 /*Estilos del icono "ventana", diseña y el icono flecha*/
 .fieldset {
-    min-width: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0, 20px;
+    
     font-family: $mainFont;
     color: $titleColor;
     border: none;
 
-    &__legend {
+    &__legend { 
         display: flex;
         margin-top: 20px;
         font-size: 18px;
         font-weight: 600;
-        width: 100%;
+        padding-right: 130px;
 
         & .fa-regular {
             color: $contrastColor;
             transform: scale(85%);
         }
-
+        
         & .fa-solid {
             color: $titleColor;
             transform: translate(122px);
         }
+
     }
+
+
 }
+
+
+
+
+
 
 .fieldset__design {
     font-size: 14px;
     margin-top: 20px;
     display: flex;
+    justify-content: center;
     gap: 75px;
 }
 
