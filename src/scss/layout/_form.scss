@@ -25,9 +25,7 @@
             margin-bottom: 20px;
             height: 30px;
         }
-
     }
-
 }
 
 .complete-button {
@@ -46,7 +44,6 @@
         width: 100%;
         height: 100%;
         opacity: 0;
-
     }
 
     &-paragraph {
@@ -54,9 +51,6 @@
         color: $white;
         padding: 5px;
     }
-
-
-
 }
 
 /*Estilos del icono "ventana", diseña y el icono flecha*/
@@ -68,6 +62,7 @@
     padding: 0, 20px;
     font-family: $mainFont;
     color: $titleColor;
+    border: none;
 
     &__legend {
         display: flex;
@@ -85,10 +80,7 @@
             color: $titleColor;
             transform: translate(122px);
         }
-
     }
-
-
 }
 
 .fieldset__design {
@@ -108,81 +100,81 @@
 
 .color-one {
     display: flex;
+
+    &__1 {
+        width: 30px;
+        height: 25px;
+        padding: 10px 0;
+        margin-left: 5%;
+        background-color: $darkColor;
+    }
+
+    &__2 {
+        width: 30px;
+        height: 25px;
+        background-color: $mediumColor;
+    }
+
+    &__3 {
+        width: 30px;
+        height: 25px;
+        padding: 10px 0;
+        background-color: $neutralColor;
+    }
 }
 
 .onecol {
     transform: scale(1.2);
 }
 
-.color-one__1 {
-    width: 30px;
-    height: 25px;
-    padding: 10px 0;
-    margin-left: 5%;
-    background-color: $darkColor;
-}
-
-.color-one__2 {
-    width: 30px;
-    height: 25px;
-    background-color: $mediumColor;
-}
-
-.color-one__3 {
-    width: 30px;
-    height: 25px;
-    padding: 10px 0;
-    background-color: $neutralColor;
-}
-
 .color-two {
     display: flex;
-}
 
-.color-two__1 {
-    width: 30px;
-    height: 25px;
-    padding: 10px 0;
-    margin-left: 5%;
-    background-color: $driedBold;
-}
+    &__1 {
+        width: 30px;
+        height: 25px;
+        padding: 10px 0;
+        margin-left: 5%;
+        background-color: $driedBold;
+    }
 
-.color-two__2 {
-    width: 30px;
-    height: 25px;
-    background-color: $rustyRed;
-}
+    &__2 {
+        width: 30px;
+        height: 25px;
+        background-color: $rustyRed;
+    }
 
-.color-two__3 {
-    width: 30px;
-    height: 25px;
-    padding: 10px 0;
-    background-color: $tomato;
+    &__3 {
+        width: 30px;
+        height: 25px;
+        padding: 10px 0;
+        background-color: $tomato;
+    }
 }
 
 .color-three {
     display: flex;
-}
 
-.color-three__1 {
-    width: 30px;
-    height: 25px;
-    padding: 10px 0;
-    margin-left: 5%;
-    background-color: $slate;
-}
+    &__1 {
+        width: 30px;
+        height: 25px;
+        padding: 10px 0;
+        margin-left: 5%;
+        background-color: $slate;
+    }
 
-.color-three__2 {
-    width: 30px;
-    height: 25px;
-    background-color: $fadedOrange;
-}
+    &__2 {
+        width: 30px;
+        height: 25px;
+        background-color: $fadedOrange;
+    }
 
-.color-three__3 {
-    width: 30px;
-    height: 25px;
-    padding: 10px 0;
-    background-color: $lightGreyBlue;
+    &__3 {
+        width: 30px;
+        height: 25px;
+        padding: 10px 0;
+        background-color: $lightGreyBlue;
+    }
 }
 
 /*Rellena*/
@@ -194,42 +186,48 @@
 /*la tarjeta ha sido creada*/
 
 .card {
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    margin: 27px auto 30px;
+    gap: 15px;
 
-.card__create {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    &__title {
+        text-align: center;
+        color: $titleColor;
+        font-size: 18px;
+        font-weight: 700;
+    }
 
-.card__title {
-    text-align: center;
-    color: $titleColor;
-    font-size: 18px;
-}
+    &__create {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.card__x {
-    font-size: 14px;
-    color: $white;
-    background-color: $azure;
-    border: none;
-    width: 181px;
-    margin: 10px 33px 30px 29px;
-    padding: 5px 9px 6px 10.5px;
-    border-radius: 3px;
-    box-shadow: 0 0 4px;
-    font-family: $mainFont;
-}
+    &__x {
+        font-size: 14px;
+        color: $white;
+        background-color: $azure;
+        border: none;
+        width: 181px;
+        margin: 10px 33px 30px 29px;
+        padding: 5px 9px 6px 10.5px;
+        border-radius: 3px;
+        box-shadow: 0 0 4px;
+        font-family: $mainFont;
+    }
 
-.card__link {
-    font-size: 12px;
-    color: $contrastColor;
-    width: 292px;
-    margin-top: 5px;
-    text-align: center;
+    &__link {
+        font-size: 12px;
+        color: $contrastColor;
+        width: 292px;
+        margin-top: 5px;
+        text-align: center;
+        
+        & .a{
+            text-decoration: none;
+        }
+    }
 }
