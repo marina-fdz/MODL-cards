@@ -1,6 +1,62 @@
 .form {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+}
+
+.complete {
+    display: flex;
+    flex-direction: column;
+    font-family: $mainFont;
+    font-size: 14px;
+    padding: 30px 20px;
+    width: 100%;
+
+    &_form {
+
+        &-label {
+            font-size: 14px;
+            color: $darkColor;
+            margin-bottom: 7px;
+        }
+
+        &-imput {
+            border: 1px solid $neutralColor;
+            margin-bottom: 20px;
+            height: 30px;
+        }
+
+    }
+
+}
+
+.complete-button {
+    position: relative;
+    background-color: $contrastColor;
+    width: 140px;
+    height: 30px;
+    margin-bottom: 20px;
+
+    &-input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+
+    }
+
+    &-paragraph {
+        text-align: center;
+        color: $white;
+        padding: 5px;
+    }
+
+
+
 }
 
 /*Estilos del icono "ventana", diseña y el icono flecha*/
@@ -12,24 +68,27 @@
     padding: 0, 20px;
     font-family: $mainFont;
     color: $titleColor;
-}
 
-.fieldset__legend { 
-    display: flex;
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: 600;
-    padding-right: 130px;
-}
+    &__legend {
+        display: flex;
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 600;
+        width: 100%;
 
-.fa-regular {
-    color: $contrastColor;
-    transform: scale(85%);
-}
+        & .fa-regular {
+            color: $contrastColor;
+            transform: scale(85%);
+        }
 
-.fa-solid {
-    color: $titleColor;
-    transform: translate(122px);
+        & .fa-solid {
+            color: $titleColor;
+            transform: translate(122px);
+        }
+
+    }
+
+
 }
 
 .fieldset__design {
@@ -104,6 +163,7 @@
 .color-three {
     display: flex;
 }
+
 .color-three__1 {
     width: 30px;
     height: 25px;
@@ -133,35 +193,27 @@
 
 /*la tarjeta ha sido creada*/
 
-.card{
+.card {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.card__create{
+.card__create {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.card__title{
+.card__title {
     text-align: center;
     color: $titleColor;
     font-size: 18px;
 }
 
-.card__link{
-    ont-size: 12px;
-    color: $contrastColor;
-    width: 292px;
-    margin-top: 5px;
-    text-align: center;
-}
-
-.card__x{
+.card__x {
     font-size: 14px;
     color: $white;
     background-color: $azure;
@@ -172,4 +224,12 @@
     border-radius: 3px;
     box-shadow: 0 0 4px;
     font-family: $mainFont;
+}
+
+.card__link {
+    font-size: 12px;
+    color: $contrastColor;
+    width: 292px;
+    margin-top: 5px;
+    text-align: center;
 }
