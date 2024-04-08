@@ -42,6 +42,7 @@
     width: 140px;
     height: 30px;
     margin-bottom: 20px;
+
     &-input{
         position: absolute;
         top:0;
@@ -52,21 +53,14 @@
         height: 100%;
         opacity: 0;
        
-
     }
     &-paragraph{
         display: flex;
         flex-direction: row;
         justify-content: center;
         margin-top: 5px;
-        color: $white;
-     
-       
-        
+        color: $white;  
     }
-
-
-
 }
 
 .section-create{
@@ -75,13 +69,15 @@
 }
 .btn-create{
     background-color: $contrastColor;
-    width: 199px;
-    height: 50px;
-    border-radius:12px;
-    border: 0;
+    border-radius:1rem;
     font-size: 18px;
+    font-weight: 800;
     color: $white;
-    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: 1px solid $contrastColor;
+    box-shadow: 3px 3px 8px $lineColor;
 
 }
 
