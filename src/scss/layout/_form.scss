@@ -214,14 +214,13 @@
         text-align: center;
         font-family: $mainFont;
 
-        &link--twitter{
-            color: $mainFont;
+        &--twitter{
+            color: $contrastColor;
         }
     }
 
     &__x {
         font-size: 14px;
-        color: $white;
         background-color: $azure;
         border: none;
         width: 181px;
@@ -230,5 +229,9 @@
         border-radius: 3px;
         box-shadow: 0 0 4px;
         font-family: $mainFont;
+
+        & .x-button{
+            color: $white;
+        }
     }
 }
