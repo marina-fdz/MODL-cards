@@ -1,93 +1,47 @@
-.form {
-    display: flex;
+.form{
+    padding: 27px 20px 30px 40px;
+    display:flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.complete {
-    display: flex;
-    flex-direction: column;
-    font-family: $mainFont;
-    font-size: 14px;
-    padding: 30px 20px;
-    width: 100%;
-
-    &_form {
-
-        &-label {
-            font-size: 14px;
-            color: $darkColor;
-            margin-bottom: 7px;
-        }
-
-        &-imput {
-            border: 1px solid $neutralColor;
-            margin-bottom: 20px;
-            height: 30px;
-        }
-    }
-}
-
-.complete-button {
-    position: relative;
-    background-color: $contrastColor;
-    width: 140px;
-    height: 30px;
-    margin-bottom: 20px;
-    &-input{
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-
-    }
-    &-paragraph{
-        text-align: center;
-        color: $white;
-        padding: 5px;
-    }
-
-
-
-}
-
-/*Estilos del icono "ventana", diseña y el icono flecha*/
 .fieldset {
-    
     font-family: $mainFont;
     color: $titleColor;
     border: none;
+    
+    
+}
 
-    &__legend { 
-        display: flex;
-        margin-top: 20px;
+.legend{
+    display: flex;
+    justify-content: space-between;
+  font-size: 18px;
+//   padding: 0 20px;
+  margin-top: 10px;
+    &-icon{
+        font-family: $mainFont;
         font-size: 18px;
         font-weight: 600;
         color: $titleColor;
-
+    }
+    & .fa-regular{
+        color: $contrastColor;
+        margin-right: 5px;
+    }
+     &.fa-solid{
+        color: $titleColor;
     }
 }
-.fa-regular{
-    color: $contrastColor;
-    margin-right: 5px;
-}
-.fa-solid{
-    color: $titleColor;
-}
 
-
-
+//design
 
 .fieldset__design {
     font-size: 14px;
     margin-top: 20px;
     display: flex;
-    justify-content: center;
-    gap: 75px;
+    justify-content: space-between;
+
 }
 
 .fieldset__design--colors {
@@ -177,11 +131,74 @@
     }
 }
 
-/*Rellena*/
+
+//complete
+
+.complete{
+    display: flex;
+    flex-direction: column;
+    font-family: $mainFont;
+    font-size: 14px;
+    padding: 30px 0px;
+    width: 100%;
+    &_form{
+        &-label{
+            font-size: 14px;
+            color: $darkColor;
+            margin-bottom: 7px;
+        }
+        &-imput{
+         border: 1px solid $neutralColor;
+         margin-bottom: 20px;
+         height: 30px;
+        }
+    }
+}
+.complete-button{
+    position: relative;
+    background-color: $contrastColor;
+    width: 140px;
+    height: 30px;
+    margin-bottom: 20px;
+    &-input{
+        position: absolute;
+        top:0;
+        left: 0;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    &-paragraph{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 5px;
+        color: $white;
+    }
+}
 
 
+//Share
 
-/*Comparte*/
+
+.section-create{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-create{
+    background-color: $contrastColor;
+    width: 199px;
+    height: 50px;
+    border-radius:12px;
+    border: 0;
+    font-size: 18px;
+    color: $white;
+    margin-top: 30px;
+}
+
 
 /*la tarjeta ha sido creada*/
 
