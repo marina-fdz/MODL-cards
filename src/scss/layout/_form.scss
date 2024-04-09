@@ -67,24 +67,17 @@
         margin-top: 20px;
         font-size: 18px;
         font-weight: 600;
-        padding-right: 130px;
-
-        & .fa-regular {
-            color: $contrastColor;
-            transform: scale(85%);
-        }
-        
-        & .fa-solid {
-            color: $titleColor;
-            transform: translate(122px);
-        }
+        color: $titleColor;
 
     }
-
-
 }
-
-
+.fa-regular{
+    color: $contrastColor;
+    margin-right: 5px;
+}
+.fa-solid{
+    color: $titleColor;
+}
 
 
 
