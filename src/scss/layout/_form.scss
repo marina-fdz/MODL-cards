@@ -104,14 +104,16 @@
         color: $titleColor;
 
     }
+
+    & .fa-regular{
+        color: $contrastColor;
+        margin-right: 5px;
+    }
+    & .fa-solid{
+        color: $titleColor;
+    }
 }
-.fa-regular{
-    color: $contrastColor;
-    margin-right: 5px;
-}
-.fa-solid{
-    color: $titleColor;
-}
+
 
 
 
