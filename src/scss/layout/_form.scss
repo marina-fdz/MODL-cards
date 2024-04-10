@@ -36,13 +36,28 @@
         & .fa-share-nodes{
             color: $contrastColor;
         }
-        //  &.fa-solid{
-        //     color: $titleColor;
-        // }
+        
+        &-btn{
+            border: none;
+            background: none;
+            font-size: 18px;
+            color: $titleColor;
+            
+        }
+
+        
+        
     }
 
 }
 
+.legend-btn-closed{
+    border: none;
+    background: none;
+    font-size: 18px;
+    color: $titleColor;
+    transform: rotate(180deg);
+}
 
 
 //design
@@ -205,6 +220,8 @@
                 border: 1px solid $neutralColor;
                 width: 3rem;
                 height: 3rem;
+                background-repeat: no-repeat;
+                background-size: cover;
             }
         }
     

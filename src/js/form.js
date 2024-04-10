@@ -32,3 +32,27 @@ form.addEventListener('input', (event)=>{
 
 });
 
+
+const buttonField = document.querySelector ('.js-legendBtn');
+const fieldDesign = document.querySelector ('.js-fieldset-design');
+
+
+
+function showFieldDesign() {
+    fieldDesign.classList.remove('collapsed');
+  }
+  function hideFieldDesign() {
+    fieldDesign.classList.add('collapsed');
+  }
+  function handleClickFieldDesign(event) {
+    event.preventDefault();
+    if (fieldDesign.classList.contains('collapsed')) {
+      showFieldDesign();
+      buttonField.className ="legend-btn-closed";
+    
+    } else {
+      hideFieldDesign();
+  
+    }
+  }
+  buttonField.addEventListener('click', handleClickFieldDesign);
