@@ -69,12 +69,13 @@
             }
 
             &--image{
+                background-image: url(/images/equipo1-1.png);
                 width: 100%;
                 height: 200px;
-                object-fit: cover;
+                background-size: cover;
+                background-position: center;
                 background-color: $contrastColor;
                 margin-bottom: 10px;
-                background-size: cover;
             }
 
             &--icons{
