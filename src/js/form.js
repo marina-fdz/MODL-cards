@@ -48,10 +48,12 @@ function showFieldDesign() {
     event.preventDefault();
     if (fieldDesign.classList.contains('collapsed')) {
       showFieldDesign();
-      buttonField.className ="legend-btn-closed";
+      buttonField.className ="legend-btn";
+      
     
     } else {
       hideFieldDesign();
+      buttonField.className ="legend-btn-closed";
   
     }
   }
