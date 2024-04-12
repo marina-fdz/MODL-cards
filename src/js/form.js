@@ -7,7 +7,7 @@ const phonePreview = document.querySelector('.js__preview_phone');
 const emailPreview = document.querySelector('.js__preview_email');
 const linkedinPreview = document.querySelector('.js__preview_linkedn');
 const githubPreview = document.querySelector('.js__preview_github');
-const cardPreview = document.querySelector('.js__card');
+const cardPreview = document.querySelector('.js__preview');
 
 const cardData = {
   palette: "",
@@ -27,15 +27,21 @@ form.addEventListener('input', (event)=>{
     console.log(cardData);
 
     
-    // if(input === 'palette'){
-    //   namePreview.classList.remove('title');
+    if(input === 'palette'){
+      cardPreview.classList.remove('color-2', 'color-3');
 
-    //   if(valueInput === 1) {
-    //     namePreview.classList.add('title');
-    //   }else if(valueInput === 1) {
-    //     namePreview.classList.add('color-2');
-    //   }
-    // };
+      if(valueInput === '1') {
+        console.log('he selecionado paleta 1');
+        console.log(cardPreview);
+
+      } else if(valueInput === '2') {
+        console.log('he selecionado paleta 2');
+        cardPreview.classList.add('color-2');
+      } else {
+        console.log('he selecionado paleta 3');
+        cardPreview.classList.add('color-3');
+      }
+    };
     
     if(input === 'name'){
         namePreview.innerHTML = valueInput;
