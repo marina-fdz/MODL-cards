@@ -7,6 +7,7 @@ const phonePreview = document.querySelector('.js__preview_phone');
 const emailPreview = document.querySelector('.js__preview_email');
 const linkedinPreview = document.querySelector('.js__preview_linkedn');
 const githubPreview = document.querySelector('.js__preview_github');
+const cardPreview = document.querySelector('.js__card');
 
 const cardData = {
   palette: "",
@@ -25,6 +26,17 @@ form.addEventListener('input', (event)=>{
     cardData[input] = valueInput;
     console.log(cardData);
 
+    
+    // if(input === 'palette'){
+    //   namePreview.classList.remove('title');
+
+    //   if(valueInput === 1) {
+    //     namePreview.classList.add('title');
+    //   }else if(valueInput === 1) {
+    //     namePreview.classList.add('color-2');
+    //   }
+    // };
+    
     if(input === 'name'){
         namePreview.innerHTML = valueInput;
     } else if(input === 'job'){
@@ -40,8 +52,8 @@ form.addEventListener('input', (event)=>{
         console.log(input);
     } else if(input === 'github'){
         githubPreview.href = valueInput;
-    }
-
+    } 
+  
 });
 
 
