@@ -21,9 +21,9 @@ const cardData = {
 };
 
 form.addEventListener('input', (event)=>{
-    const input = event.target.id;
-    const valueInput = event.target.value;
-    cardData[input] = valueInput;
+  const input = event.target.id;
+  const valueInput = event.target.value;
+  cardData[input] = valueInput;
     console.log(cardData);
 
     
@@ -88,3 +88,65 @@ function showFieldDesign() {
     }
   }
   buttonField.addEventListener('click', handleClickFieldDesign);
+
+  const buttonReset = document.querySelector('.js-btn-reset');
+  
+
+
+  function cardDataReset (cardData){
+    cardData.palette = "";
+    cardData.name = "";
+    cardData.job = "";
+    cardData.phone = "";
+    cardData.email = "";
+    cardData.linkedin = "";
+    cardData.github = "";
+    cardData.photo = "";
+    console.log(cardData);
+  }
+
+ const inputName = document.querySelector('.js-input-name');
+ const inputJob = document.querySelector('.js-input-job');
+ const inputPhone = document.querySelector('.js-input-phone');
+ const inputEmail = document.querySelector('.js-input-email');
+ const inputLinkedin = document.querySelector('.js-input-linkedin');
+ const inputGithub = document.querySelector('.js-input-github');
+
+ 
+
+function valueInputReset (){
+    inputName.value = "";
+    inputJob.value = "";
+    inputPhone.value = "";
+    inputEmail.value = "";
+    inputLinkedin.value = "";
+    inputGithub.value = "";
+    profileImage.style.backgroundImage = "";
+
+  }
+
+  
+function valuePreviewReset (){
+    namePreview.innerHTML = "Nombre Apellido";
+    jobPreview.innerHTML = "Front-end developer";
+    phonePreview.href = "";
+    emailPreview.href = "";
+    linkedinPreview.href = "";
+    githubPreview.href = "";
+    profilePreview.style.backgroundImage = `url(https://ih0.redbubble.net/image.1615061405.6202/raf,360x360,075,t,fafafa:ca443f4786.jpg)`
+  }
+
+  function handleReset (event){
+    cardDataReset(cardData);
+    valueInputReset();
+    valuePreviewReset();
+  }
+
+
+  buttonReset.addEventListener('click', handleReset);
+  console.log(cardData);
+
+  // modificar el objeto y ponerlo vacio
+  // poner el value de los inputs vacio
+  // la tarjeta de preview valores inciales
+  // diseña se tendrá que quedar con el tick en la opción 1
