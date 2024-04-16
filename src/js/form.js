@@ -23,18 +23,20 @@ const cardData = {
 form.addEventListener('input', (event)=>{
   const input = event.target.id;
   const valueInput = event.target.value;
+  const name = event.target.name;
+  const valuePalette = event.target.value;
   cardData[input] = valueInput;
     console.log(cardData);
 
     
-    if(input === 'palette'){
+    if(name === 'palette'){
       cardPreview.classList.remove('color-2', 'color-3');
 
-      if(valueInput === '1') {
+      if(valuePalette === '1') {
         console.log('he selecionado paleta 1');
         console.log(cardPreview);
 
-      } else if(valueInput === '2') {
+      } else if(valuePalette === '2') {
         console.log('he selecionado paleta 2');
         cardPreview.classList.add('color-2');
       } else {
@@ -95,7 +97,9 @@ function showFieldDesign() {
 
   function checkedReset (){
     colChecked.checked = true;
-    console.log(colChecked.checked);
+    cardPreview.classList.remove('color-2');
+    cardPreview.classList.remove('color-3');
+    
   }
 
 
