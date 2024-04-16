@@ -90,7 +90,13 @@ function showFieldDesign() {
   buttonField.addEventListener('click', handleClickFieldDesign);
 
   const buttonReset = document.querySelector('.js-btn-reset');
-  
+
+  const colChecked = document.querySelector('.js-onecol');
+
+  function checkedReset (){
+    colChecked.checked = true;
+    console.log(colChecked.checked);
+  }
 
 
   function cardDataReset (cardData){
@@ -140,13 +146,11 @@ function valuePreviewReset (){
     cardDataReset(cardData);
     valueInputReset();
     valuePreviewReset();
+    checkedReset();
+
   }
 
 
   buttonReset.addEventListener('click', handleReset);
   console.log(cardData);
 
-  // modificar el objeto y ponerlo vacio
-  // poner el value de los inputs vacio
-  // la tarjeta de preview valores inciales
-  // diseña se tendrá que quedar con el tick en la opción 1
