@@ -7,7 +7,7 @@
     min-height:calc(100vh - 11rem);
     @media all and (width > 768px){
         min-height:calc(100vh - 6rem);
-    
+        
     }
 
     &__image{       
@@ -15,14 +15,17 @@
         margin: 95px 35px 0 35px;
         @media (min-width:768px){
             height: 107px;
-            margin: 200px 175px 31px 175px;
+            margin: 80px 175px 31px 175px;
             padding: 2px 0 0;
         }
 
-        // @media (min-width:1024px){
-        //     margin-top: 15%;
-            
-        // }
+        @media (height > 1000px){
+            margin-top: 200px;    
+        }
+
+        @media (height > 1200px){
+            margin-top: 350px;    
+        }
     }
 
     &__title{
@@ -101,8 +104,17 @@
         text-align: center;
         color: $white;
         text-decoration: none;
+
+        &:hover{
+            background-color: $contrastColor;
+        }
+
         @media (min-width:768px){
-            margin: 186px 75px 59px 65px;
+            margin: 100px 75px 59px 65px;
+        }
+
+        @media (height > 800px){
+            margin-top: 186px;    
         }
         // @media (min-width:1024px){
         //     margin-top: 5%;
