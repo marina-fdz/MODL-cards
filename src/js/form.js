@@ -8,6 +8,13 @@ const emailPreview = document.querySelector('.js__preview_email');
 const linkedinPreview = document.querySelector('.js__preview_linkedn');
 const githubPreview = document.querySelector('.js__preview_github');
 const cardPreview = document.querySelector('.js__preview');
+const regexEmail = document.querySelector('.js-msg-email');
+const regexLinkedin = document.querySelector('.js-msg-linkedin');
+const regexGit = document.querySelector('.js-msg-git');
+const expresionEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+const expresionUrl = /[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/;
+
+
 
 const cardData = {
   palette: "",
@@ -50,19 +57,42 @@ form.addEventListener('input', (event)=>{
     } else if(input === 'job'){
         jobPreview.innerHTML = valueInput;
     } else if(input === 'email'){
+      if (expresionEmail.test(valueInput)=== true){
         emailPreview.href = valueInput;
-        console.log(input);
+
+      }else{
+        regexEmail.innerHTML = 'La dirección de correo introducida no es válida'
+
+      }
+              
+     
     } else if(input === 'phone'){
         phonePreview.href = valueInput;
         console.log(input);
     } else if(input === 'linkedin'){
-        linkedinPreview.href = valueInput;
-        console.log(input);
+      if(expresionUrl.test(valueInput)=== true){
+        if((valueInput.includes('http://')) || (valueInput.includes('https://'))){
+          linkedinPreview.href = valueInput;
+        }else{
+          linkedinPreview.href = 'http://'+ valueInput;
+        }
+      }else {
+        regexLinkedin.innerHTML = 'La url introducida no es válida'
+      } 
     } else if(input === 'github'){
-        githubPreview.href = valueInput;
+      if(expresionUrl.test(valueInput)=== true){
+        if((valueInput.includes('http://')) || (valueInput.includes('https://'))){
+          githubPreview.href = valueInput;
+        }else{
+          githubPreview.href = 'http://'+ valueInput;
+        }
+      }else {
+        regexGit.innerHTML = 'La url introducida no es válida'
+      } 
     } 
   
 });
+
 
 
 const buttonField = document.querySelector ('.js-legendBtn');
