@@ -58,10 +58,10 @@ form.addEventListener('input', (event)=>{
         jobPreview.innerHTML = valueInput;
     } else if(input === 'email'){
       if (expresionEmail.test(valueInput)=== true){
-        emailPreview.href = valueInput;
+        emailPreview.href = "mailto://"+valueInput;
 
       }else{
-        regexEmail.innerHTML = 'La dirección de correo introducida no es válida'
+        regexEmail.innerHTML = 'La dirección de correo introducida no es válida.'
 
       }
               
@@ -77,7 +77,8 @@ form.addEventListener('input', (event)=>{
           linkedinPreview.href = 'http://'+ valueInput;
         }
       }else {
-        regexLinkedin.innerHTML = 'La url introducida no es válida'
+        regexLinkedin.innerHTML = 'La url introducida no es válida.'
+       
       } 
     } else if(input === 'github'){
       if(expresionUrl.test(valueInput)=== true){
@@ -87,7 +88,7 @@ form.addEventListener('input', (event)=>{
           githubPreview.href = 'http://'+ valueInput;
         }
       }else {
-        regexGit.innerHTML = 'La url introducida no es válida'
+        regexGit.innerHTML = 'La url introducida no es válida.'
       } 
     } 
   
