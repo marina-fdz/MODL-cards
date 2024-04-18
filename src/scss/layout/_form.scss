@@ -185,6 +185,7 @@
         &__input{
          border: 1px solid $neutralColor;
          margin-bottom: 20px;
+         font-size: 14px;
          height: 30px;
          padding-left: 10px;
          &::placeholder{
@@ -230,6 +231,14 @@
                 background-repeat: no-repeat;
                 background-size: cover;
             }
+        }
+
+        &__regex{
+            font-family: $mainFont;
+            color: $contrastColor;
+            font-size: 1.4rem;
+            padding-bottom: 10px;
+            transform: translateY(-10px);
         }
     
 }
