@@ -10,6 +10,8 @@
         margin: 20px 40px 20px 0px;
         border-radius: 6px;
         padding: 20px 45px 20px;
+        height: calc(100vh - 21.1rem);
+        overflow: scroll;
         @media all and (height > 620px){
             padding-bottom: 50px;
         }
