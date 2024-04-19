@@ -56,13 +56,13 @@
 
 }
 
-.legend-btn-closed{
-    border: none;
-    background: none;
-    font-size: 18px;
-    color: $titleColor;
-    transform: rotate(180deg);
-}
+// .legend-btn-closed{
+//     border: none;
+//     background: none;
+//     font-size: 18px;
+//     color: $titleColor;
+//     // transform: rotate(180deg);
+// }
 
 
 //design
@@ -322,4 +322,16 @@
 .collapsed {
     display: none;
     
+}
+
+.collapsable--close{
+    // background-color: blue;
+
+    .collapsable__btn--right{
+       
+        transform: rotate(180deg);
+    }
+    .collapsable__content{
+        display: none;
+    }
 }

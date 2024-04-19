@@ -101,27 +101,27 @@ form.addEventListener('input', (event)=>{
 
 
 
-const buttonField = document.querySelector ('.js-legendBtn');
-const fieldDesign = document.querySelector ('.js-fieldset-design');
+// const buttonField = document.querySelector ('.js-legendBtn');
+// const fieldDesign = document.querySelector ('.js-fieldset-design');
 
-function showFieldDesign() {
-    fieldDesign.classList.remove('collapsed');
-  }
-  function hideFieldDesign() {
-    fieldDesign.classList.add('collapsed');
-  }
-  function handleClickFieldDesign(event) {
-    event.preventDefault();
-    if (fieldDesign.classList.contains('collapsed')) {
-      showFieldDesign();
-      buttonField.className ="legend-btn";
-    } else {
-      hideFieldDesign();
-      buttonField.className ="legend-btn-closed";
+// function showFieldDesign() {
+//     fieldDesign.classList.remove('collapsed');
+//   }
+//   function hideFieldDesign() {
+//     fieldDesign.classList.add('collapsed');
+//   }
+//   function handleClickFieldDesign(event) {
+//     event.preventDefault();
+//     if (fieldDesign.classList.contains('collapsed')) {
+//       showFieldDesign();
+//       buttonField.className ="legend-btn";
+//     } else {
+//       hideFieldDesign();
+//       buttonField.className ="legend-btn-closed";
   
-    }
-  }
-  buttonField.addEventListener('click', handleClickFieldDesign);
+//     }
+//   }
+//   buttonField.addEventListener('click', handleClickFieldDesign);
 
   
 
