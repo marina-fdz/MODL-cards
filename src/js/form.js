@@ -58,37 +58,42 @@ form.addEventListener('input', (event)=>{
         jobPreview.innerHTML = valueInput;
     } else if(input === 'email'){
       if (expresionEmail.test(valueInput)=== true){
-        emailPreview.href = "mailto://"+valueInput;
-
+        emailPreview.href = 'mailto:' + valueInput;
+        regexEmail.innerHTML = '';
       }else{
-        regexEmail.innerHTML = 'La dirección de correo introducida no es válida.'
+        regexEmail.innerHTML = 'La dirección de correo introducida no es válida';
+      }         
 
-      }
-              
-     
     } else if(input === 'phone'){
         phonePreview.href = valueInput;
         console.log(input);
+
     } else if(input === 'linkedin'){
       if(expresionUrl.test(valueInput)=== true){
         if((valueInput.includes('http://')) || (valueInput.includes('https://'))){
           linkedinPreview.href = valueInput;
+          regexLinkedin.innerHTML = '';
         }else{
           linkedinPreview.href = 'http://'+ valueInput;
+          regexLinkedin.innerHTML = '';
         }
+
       }else {
-        regexLinkedin.innerHTML = 'La url introducida no es válida.'
-       
+        regexLinkedin.innerHTML = 'La url introducida no es válida';
       } 
+
     } else if(input === 'github'){
       if(expresionUrl.test(valueInput)=== true){
         if((valueInput.includes('http://')) || (valueInput.includes('https://'))){
           githubPreview.href = valueInput;
+          regexGit.innerHTML = '';
         }else{
           githubPreview.href = 'http://'+ valueInput;
+          regexGit.innerHTML = '';
         }
+
       }else {
-        regexGit.innerHTML = 'La url introducida no es válida.'
+        regexGit.innerHTML = 'La url introducida no es válida';
       } 
     } 
   
