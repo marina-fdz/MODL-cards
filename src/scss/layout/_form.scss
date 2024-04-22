@@ -9,8 +9,7 @@
         margin-top: 20px;
         margin-bottom: 20px;
         padding-left: 40px;
-        height: calc(100vh - 21.1rem);
-        overflow: scroll;
+        
     }
 
     & .fieldset {
@@ -325,7 +324,6 @@
 }
 
 .collapsable--close{
-    // background-color: blue;
 
     .collapsable__btn--right{
        
