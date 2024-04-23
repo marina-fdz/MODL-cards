@@ -265,7 +265,23 @@
         margin-top: 30px;
         box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
     }
+
+    & .btn-create_grey{
+        background-color: $colorGrey;
+        width: 199px;
+        height: 50px;
+        border-radius:12px;
+        border: 0;
+        font-size: 18px;
+        font-family: $mainFont;
+        font-weight: 600;
+        color: $white;
+        margin-top: 30px;
+        box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    }
 }
+
+
 
 
 
