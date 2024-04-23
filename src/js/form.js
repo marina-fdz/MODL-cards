@@ -8,12 +8,13 @@ const emailPreview = document.querySelector('.js__preview_email');
 const linkedinPreview = document.querySelector('.js__preview_linkedn');
 const githubPreview = document.querySelector('.js__preview_github');
 const cardPreview = document.querySelector('.js__preview');
+const regexPhone = document.querySelector('.js-msg-phone');
 const regexEmail = document.querySelector('.js-msg-email');
 const regexLinkedin = document.querySelector('.js-msg-linkedin');
 const regexGit = document.querySelector('.js-msg-git');
 const expresionEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 const expresionUrl = /[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/;
-
+const expressionPhone = /(?:([+]\d{1,4})[-.\s]?)?(?:[(](\d{1,3})[)][-.\s]?)?(\d{1,4})[-.\s]?(\d{1,4})[-.\s]?(\d{1,9})/g;
 
 
 const cardData = {
@@ -65,8 +66,16 @@ form.addEventListener('input', (event)=>{
       }         
 
     } else if(input === 'phone'){
-        phonePreview.href = valueInput;
+        
         console.log(input);
+        if (expressionPhone.test(valueInput)=== true){
+          phonePreview.href = valueInput;
+          regexPhone.innerHTML = '';
+        }else{
+          regexPhone.innerHTML = 'El número de teléfono introducido no es válido.';
+        }   
+        
+
 
     } else if(input === 'linkedin'){
       if(expresionUrl.test(valueInput)=== true){
@@ -79,7 +88,7 @@ form.addEventListener('input', (event)=>{
         }
 
       }else {
-        regexLinkedin.innerHTML = 'La url introducida no es válida';
+        regexLinkedin.innerHTML = 'La url introducida no es válida.';
       } 
 
     } else if(input === 'github'){
@@ -93,7 +102,7 @@ form.addEventListener('input', (event)=>{
         }
 
       }else {
-        regexGit.innerHTML = 'La url introducida no es válida';
+        regexGit.innerHTML = 'La url introducida no es válida.';
       } 
     } 
   
