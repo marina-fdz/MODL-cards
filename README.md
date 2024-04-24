@@ -16,17 +16,18 @@ npm install
 
 npm start
 
-## 🔨 **Funcionalidades del proyecto**
+## ![image](https://github.com/luciadelafuente/project-promo-x-module-2-team-1/assets/162286245/94cd911f-764e-4a54-8e6f-f3e897a39ea6)**Crea tu tarjeta virtual**
 
-Crear una tarjeta de presentación virtual donde puede elegir entre diferentes paleta de colores, añadir datos personales, imagen y links de redes sociales además de poderla compartir en X.
+Vamos a comenzar. La vista previa se irá actualizando a medida que vamos rellenando.
+- Elije el estilo seleccionando la paleta de colores que más te guste.
+- Rellena el formulario con tus datos profesionales.
+- Si no estás satisfecho con el resultado pulsa "RESET" para comenzar de nuevo.
+- Por último, comparte 
 
 ## ✅**Tecnologías utilizadas**
 
-  
- 
-
-- ![image](https://github.com/luciadelafuente/project-promo-x-module-2-team-1/assets/162286245/9f4280a4-c68e-4329-9d17-032d7c795822) avanzado para crear la estructura de la aplicación.
-- ![image](https://github.com/luciadelafuente/project-promo-x-module-2-team-1/assets/162286245/425c71c8-9e17-485a-8ea0-fdbba2b73d19)
-- ![image](https://github.com/luciadelafuente/project-promo-x-module-2-team-1/assets/162286245/ed3e197a-b248-4d3e-8d50-8dbf3f3a4dec)
-- ![image](https://github.com/luciadelafuente/project-promo-x-module-2-team-1/assets/162286245/585c1c63-fbd4-40dd-bae0-88113d4b3162)
+ ![image](https://github.com/luciadelafuente/project-promo-x-module-2-team-1/assets/162286245/9f4280a4-c68e-4329-9d17-032d7c795822) avanzado para crear la estructura de la aplicación.
+ ![image](https://github.com/luciadelafuente/project-promo-x-module-2-team-1/assets/162286245/425c71c8-9e17-485a-8ea0-fdbba2b73d19)
+ ![image](https://github.com/luciadelafuente/project-promo-x-module-2-team-1/assets/162286245/ed3e197a-b248-4d3e-8d50-8dbf3f3a4dec)
+ ![image](https://github.com/luciadelafuente/project-promo-x-module-2-team-1/assets/162286245/585c1c63-fbd4-40dd-bae0-88113d4b3162)
 
