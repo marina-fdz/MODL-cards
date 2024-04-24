@@ -16,7 +16,7 @@ npm install
 
 npm start
 
-## **Crea tu tarjeta virtual**
+## ​✍️​**Crea tu tarjeta virtual**
 
 Vamos a comenzar. La vista previa se irá actualizando a medida que vamos rellenando.
 - Elije el estilo seleccionando la paleta de colores que más te guste.
@@ -26,8 +26,16 @@ Vamos a comenzar. La vista previa se irá actualizando a medida que vamos rellen
 
 ## ✅**Tecnologías utilizadas**
 
- ![image](https://github.com/luciadelafuente/project-promo-x-module-2-team-1/assets/162286245/9f4280a4-c68e-4329-9d17-032d7c795822) avanzado para crear la estructura de la aplicación.
+ ![image](https://github.com/luciadelafuente/project-promo-x-module-2-team-1/assets/162286245/9f4280a4-c68e-4329-9d17-032d7c795822)
  ![image](https://github.com/luciadelafuente/project-promo-x-module-2-team-1/assets/162286245/425c71c8-9e17-485a-8ea0-fdbba2b73d19)
  ![image](https://github.com/luciadelafuente/project-promo-x-module-2-team-1/assets/162286245/ed3e197a-b248-4d3e-8d50-8dbf3f3a4dec)
  ![image](https://github.com/luciadelafuente/project-promo-x-module-2-team-1/assets/162286245/585c1c63-fbd4-40dd-bae0-88113d4b3162)
 
+- HTML utilizada para crear la estructura de la aplicación.
+- CSS para darle estilo a la maquetación además del diseño resposive con media queries.
+- SASS para mantener el código ordenado y tenga fácil acceso.
+- JavaScript para darle funcionalidad a los eventos en cuanto a la interactividad por parte del cliente.
+
+## ​👥​**Equipo**​👥​
+
+El proyecto fue creado por Diana, Lucía, Marina y Oti durante el Módulo 2 del bootcamp de Proramación Web de Adalab.
