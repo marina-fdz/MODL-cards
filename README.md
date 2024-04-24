@@ -38,4 +38,4 @@ Vamos a comenzar. La vista previa se irá actualizando a medida que vamos rellen
 
 ## ​👥​**Equipo**​👥​
 
-El proyecto fue creado por Diana, Lucía, Marina y Oti durante el Módulo 2 del bootcamp de Proramación Web de Adalab.
+El proyecto fue creado por Diana, Lucía, Marina y Oti durante el Módulo 2 del bootcamp de Programación Web de Adalab.
