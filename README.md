@@ -16,13 +16,13 @@ npm install
 
 npm start
 
-## ![image](https://github.com/luciadelafuente/project-promo-x-module-2-team-1/assets/162286245/94cd911f-764e-4a54-8e6f-f3e897a39ea6)**Crea tu tarjeta virtual**
+## **Crea tu tarjeta virtual**
 
 Vamos a comenzar. La vista previa se irá actualizando a medida que vamos rellenando.
 - Elije el estilo seleccionando la paleta de colores que más te guste.
 - Rellena el formulario con tus datos profesionales.
 - Si no estás satisfecho con el resultado pulsa "RESET" para comenzar de nuevo.
-- Por último, comparte 
+- Por último, comparte. 
 
 ## ✅**Tecnologías utilizadas**
 
