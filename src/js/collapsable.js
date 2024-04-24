@@ -1,7 +1,3 @@
-'use strict';
-
-console.log('holis soy partial');
-
 const collapsableHeader = document.querySelectorAll('.js_collapsable-header');
 const parentCollaps = document.querySelectorAll('.js_fieldset');
 
