@@ -17,16 +17,7 @@ const expresionUrl = /[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]
 const expressionPhone = /(?:([+]\d{1,4})[-.\s]?)?(?:[(](\d{1,3})[)][-.\s]?)?(\d{1,4})[-.\s]?(\d{1,4})[-.\s]?(\d{1,9})/g;
 
 
-const cardData = {
-  palette: "",
-  name: "",
-  job: "",
-  phone: "",
-  email: "",
-  linkedin: "",
-  github: "",
-  photo: "",
-};
+
 
 form.addEventListener('input', (event)=>{
   const input = event.target.id;
@@ -39,7 +30,7 @@ form.addEventListener('input', (event)=>{
     
     if(name === 'palette'){
       cardPreview.classList.remove('color-2', 'color-3');
-
+      cardData.palette = valuePalette;
       if(valuePalette === '1') {
         console.log('he selecionado paleta 1');
         console.log(cardPreview);
