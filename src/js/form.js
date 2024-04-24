@@ -24,21 +24,15 @@ function changePalette(event){
 function changeComplete(event){
   const input = event.target.id;
   const valueInput = event.target.value;
-  
-
-  // if(!event.target.name === 'palette'){
-    
-  // }
-
-  
+  if(input !== ""){
+    cardData[input] = valueInput;
     if(input === 'name'){
         namePreview.innerHTML = valueInput;
-        cardData[input] = valueInput;
+        
     } else if(input === 'job'){
         jobPreview.innerHTML = valueInput;
-        cardData[input] = valueInput;
+
     } else if(input === 'email'){
-      cardData[input] = valueInput;
       if (expresionEmail.test(valueInput)=== true){
         emailPreview.href = 'mailto:' + valueInput;
         regexEmail.innerHTML = '';
@@ -47,7 +41,6 @@ function changeComplete(event){
       }         
 
     } else if(input === 'phone'){
-      cardData[input] = valueInput;
         if (expressionPhone.test(valueInput)=== true){
           phonePreview.href = valueInput;
           regexPhone.innerHTML = '';
@@ -56,7 +49,6 @@ function changeComplete(event){
         }   
         
     } else if(input === 'linkedin'){
-      cardData[input] = valueInput;
       if(expresionUrl.test(valueInput)=== true){
         if((valueInput.includes('http://')) || (valueInput.includes('https://'))){
           linkedinPreview.href = valueInput;
@@ -71,7 +63,6 @@ function changeComplete(event){
       } 
 
     } else if(input === 'github'){
-      cardData[input] = valueInput;
       if(expresionUrl.test(valueInput)=== true){
         if((valueInput.includes('http://')) || (valueInput.includes('https://'))){
           githubPreview.href = valueInput;
@@ -85,7 +76,7 @@ function changeComplete(event){
         regexGit.innerHTML = 'La url introducida no es válida.';
       } 
     } 
-  
+  }
 }
 
 
