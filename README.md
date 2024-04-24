@@ -22,8 +22,11 @@ Crear una tarjeta de presentación virtual donde puede elegir entre diferentes p
 
 ✅Tecnologías utilizadas
 
-![image](https://github.com/luciadelafuente/project-promo-x-module-2-team-1/assets/162286245/9f4280a4-c68e-4329-9d17-032d7c795822)
+![image](https://github.com/luciadelafuente/project-promo-x-module-2-team-1/assets/162286245/9f4280a4-c68e-4329-9d17-032d7c795822) ![image](https://github.com/luciadelafuente/project-promo-x-module-2-team-1/assets/162286245/425c71c8-9e17-485a-8ea0-fdbba2b73d19) ![image](https://github.com/luciadelafuente/project-promo-x-module-2-team-1/assets/162286245/ded6bb99-ee12-435c-8635-eb97693b9436) ![image](https://github.com/luciadelafuente/project-promo-x-module-2-team-1/assets/162286245/585c1c63-fbd4-40dd-bae0-88113d4b3162)
 
+
+
+- HTML:
 - CSS:
 - SASS:
 - JAVASCRIPT:
