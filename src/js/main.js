@@ -1,5 +1,6 @@
 'use strict';
 
+import "./variables.js";
 import "./card-object.js";
 import "./form.js";
 import "./get-avatar.js";

@@ -1,5 +1,5 @@
 const cardData = {
-    palette: "",
+    palette: "1",
     name: "",
     job: "",
     phone: "",

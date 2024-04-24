@@ -1,54 +1,44 @@
-'use strict';
-
-const form = document.querySelector('.js__form');
-const namePreview = document.querySelector('.js__preview_name');
-const jobPreview = document.querySelector('.js__preview_job');
-const phonePreview = document.querySelector('.js__preview_phone');
-const emailPreview = document.querySelector('.js__preview_email');
-const linkedinPreview = document.querySelector('.js__preview_linkedn');
-const githubPreview = document.querySelector('.js__preview_github');
-const cardPreview = document.querySelector('.js__preview');
-const regexPhone = document.querySelector('.js-msg-phone');
-const regexEmail = document.querySelector('.js-msg-email');
-const regexLinkedin = document.querySelector('.js-msg-linkedin');
-const regexGit = document.querySelector('.js-msg-git');
-const expresionEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-const expresionUrl = /[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/;
-const expressionPhone = /(?:([+]\d{1,4})[-.\s]?)?(?:[(](\d{1,3})[)][-.\s]?)?(\d{1,4})[-.\s]?(\d{1,4})[-.\s]?(\d{1,9})/g;
 
 
-
-
-form.addEventListener('input', (event)=>{
-  const input = event.target.id;
-  const valueInput = event.target.value;
+function changePalette(event){
   const name = event.target.name;
   const valuePalette = event.target.value;
-  cardData[input] = valueInput;
-    console.log(cardData);
 
-    
-    if(name === 'palette'){
-      cardPreview.classList.remove('color-2', 'color-3');
-      cardData.palette = valuePalette;
-      if(valuePalette === '1') {
-        console.log('he selecionado paleta 1');
-        console.log(cardPreview);
+  if(name === 'palette'){
+    cardPreview.classList.remove('color-2', 'color-3');
+    cardData.palette = valuePalette;
+    if(valuePalette === '1') {
+      console.log('he selecionado paleta 1');
+      console.log(cardPreview);
 
-      } else if(valuePalette === '2') {
-        console.log('he selecionado paleta 2');
-        cardPreview.classList.add('color-2');
-      } else {
-        console.log('he selecionado paleta 3');
-        cardPreview.classList.add('color-3');
-      }
-    };
+    } else if(valuePalette === '2') {
+      console.log('he selecionado paleta 2');
+      cardPreview.classList.add('color-2');
+    } else {
+      console.log('he selecionado paleta 3');
+      cardPreview.classList.add('color-3');
+    }
+  };
+}
+
+function changeComplete(event){
+  const input = event.target.id;
+  const valueInput = event.target.value;
+  
+
+  // if(!event.target.name === 'palette'){
     
+  // }
+
+  
     if(input === 'name'){
         namePreview.innerHTML = valueInput;
+        cardData[input] = valueInput;
     } else if(input === 'job'){
         jobPreview.innerHTML = valueInput;
+        cardData[input] = valueInput;
     } else if(input === 'email'){
+      cardData[input] = valueInput;
       if (expresionEmail.test(valueInput)=== true){
         emailPreview.href = 'mailto:' + valueInput;
         regexEmail.innerHTML = '';
@@ -57,8 +47,7 @@ form.addEventListener('input', (event)=>{
       }         
 
     } else if(input === 'phone'){
-        
-        console.log(input);
+      cardData[input] = valueInput;
         if (expressionPhone.test(valueInput)=== true){
           phonePreview.href = valueInput;
           regexPhone.innerHTML = '';
@@ -66,9 +55,8 @@ form.addEventListener('input', (event)=>{
           regexPhone.innerHTML = 'El número de teléfono introducido no es válido.';
         }   
         
-
-
     } else if(input === 'linkedin'){
+      cardData[input] = valueInput;
       if(expresionUrl.test(valueInput)=== true){
         if((valueInput.includes('http://')) || (valueInput.includes('https://'))){
           linkedinPreview.href = valueInput;
@@ -83,6 +71,7 @@ form.addEventListener('input', (event)=>{
       } 
 
     } else if(input === 'github'){
+      cardData[input] = valueInput;
       if(expresionUrl.test(valueInput)=== true){
         if((valueInput.includes('http://')) || (valueInput.includes('https://'))){
           githubPreview.href = valueInput;
@@ -97,7 +86,18 @@ form.addEventListener('input', (event)=>{
       } 
     } 
   
-});
+}
+
+
+
+const handleData = (event) =>{
+  changePalette(event);
+  changeComplete(event);
+  console.log(cardData);
+}
+
+form.addEventListener('input', handleData)
+  
 
 
 
