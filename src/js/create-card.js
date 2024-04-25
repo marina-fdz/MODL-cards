@@ -1,6 +1,8 @@
 const btnCreate = document.querySelector ('.js_btnCreate');
 const sectionCreated = document.querySelector('.js-section-created');
 
+
+
 function handleCreate (event){
     event.preventDefault();
     
@@ -26,5 +28,4 @@ function handleCreate (event){
 }
 
 btnCreate.addEventListener('click', handleCreate);
-
 

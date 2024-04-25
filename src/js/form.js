@@ -7,15 +7,9 @@ function changePalette(event){
   if(name === 'palette'){
     cardPreview.classList.remove('color-2', 'color-3');
     cardData.palette = valuePalette;
-    if(valuePalette === '1') {
-      console.log('he selecionado paleta 1');
-      console.log(cardPreview);
-
-    } else if(valuePalette === '2') {
-      console.log('he selecionado paleta 2');
+    if(valuePalette === '2') {
       cardPreview.classList.add('color-2');
-    } else {
-      console.log('he selecionado paleta 3');
+    } else if(valuePalette === '3'){
       cardPreview.classList.add('color-3');
     }
   };
@@ -52,12 +46,10 @@ function changeComplete(event){
       if(expresionUrl.test(valueInput)=== true){
         if((valueInput.includes('http://')) || (valueInput.includes('https://'))){
           linkedinPreview.href = valueInput;
-          regexLinkedin.innerHTML = '';
         }else{
           linkedinPreview.href = 'http://'+ valueInput;
-          regexLinkedin.innerHTML = '';
         }
-
+        regexLinkedin.innerHTML = '';
       }else {
         regexLinkedin.innerHTML = 'La url introducida no es válida.';
       } 
@@ -66,12 +58,10 @@ function changeComplete(event){
       if(expresionUrl.test(valueInput)=== true){
         if((valueInput.includes('http://')) || (valueInput.includes('https://'))){
           githubPreview.href = valueInput;
-          regexGit.innerHTML = '';
         }else{
           githubPreview.href = 'http://'+ valueInput;
-          regexGit.innerHTML = '';
         }
-
+        regexGit.innerHTML = '';
       }else {
         regexGit.innerHTML = 'La url introducida no es válida.';
       } 
