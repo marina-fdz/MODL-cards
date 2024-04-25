@@ -9,8 +9,7 @@
         margin-top: 20px;
         margin-bottom: 20px;
         padding-left: 40px;
-        height: calc(100vh - 21.1rem);
-        overflow: scroll;
+        
     }
 
     & .fieldset {
@@ -56,13 +55,13 @@
 
 }
 
-.legend-btn-closed{
-    border: none;
-    background: none;
-    font-size: 18px;
-    color: $titleColor;
-    transform: rotate(180deg);
-}
+// .legend-btn-closed{
+//     border: none;
+//     background: none;
+//     font-size: 18px;
+//     color: $titleColor;
+//     // transform: rotate(180deg);
+// }
 
 
 //design
@@ -185,6 +184,7 @@
         &__input{
          border: 1px solid $neutralColor;
          margin-bottom: 20px;
+         font-size: 14px;
          height: 30px;
          padding-left: 10px;
          &::placeholder{
@@ -231,6 +231,14 @@
                 background-size: cover;
             }
         }
+
+        &__regex{
+            font-family: $mainFont;
+            color: $contrastColor;
+            font-size: 1.4rem;
+            padding-bottom: 10px;
+            transform: translateY(-10px);
+        }
     
 }
 
@@ -240,8 +248,11 @@
 
 .section-create{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-bottom: 30px;
+    gap: 20px;
     
 
     & .btn-create{
@@ -257,7 +268,23 @@
         margin-top: 30px;
         box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
     }
+
+    & .btn-create_grey{
+        background-color: $colorGrey;
+        width: 199px;
+        height: 50px;
+        border-radius:12px;
+        border: 0;
+        font-size: 18px;
+        font-family: $mainFont;
+        font-weight: 600;
+        color: $white;
+        margin-top: 30px;
+        box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    }
 }
+
+
 
 
 
@@ -313,4 +340,15 @@
 .collapsed {
     display: none;
     
+}
+
+.collapsable--close{
+
+    .collapsable__btn--right{
+       
+        transform: rotate(180deg);
+    }
+    .collapsable__content{
+        display: none;
+    }
 }
