@@ -22,6 +22,7 @@ function handleCreate (event){
             localStorage.setItem('newCard', JSON.stringify(cardData));
             cardLink.innerHTML = dataResponse.cardURL;
             cardLink.href = dataResponse.cardURL;
+            createError.innerHTML = '';
         }else if(dataResponse.error.toLowerCase().includes('mandatory field')){
             createError.innerHTML = 'Es necesario rellenar todos los campos.';          
         }else if(dataResponse.error.includes('ER_DATA_TOO_LONG')){
