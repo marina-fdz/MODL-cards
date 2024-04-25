@@ -19,12 +19,18 @@ function handleCreate (event){
             btnCreate.classList.remove('btn-create');
             btnCreate.classList.add('btn-create_grey');
             sectionCreated.classList.remove('collapsed');
-        }else{
-            console.log(`Ha sucedido un error`);
+            localStorage.setItem('newCard', JSON.stringify(cardData));
+            cardLink.innerHTML = dataResponse.cardURL;
+            cardLink.href = dataResponse.cardURL;
+        }else if(dataResponse.error.toLowerCase().includes('mandatory field')){
+            createError.innerHTML = 'Es necesario rellenar todos los campos.';          
+        }else if(dataResponse.error.includes('ER_DATA_TOO_LONG')){
+            createError.innerHTML = 'El peso de la imagen no puede ser superior a 19KB.'
         }
         
     })
     // .catch((error)=> console.log(`Ha sucedido un error:${error}`));
+
 }
 
 btnCreate.addEventListener('click', handleCreate);

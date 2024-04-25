@@ -11,7 +11,7 @@ const regexEmail = document.querySelector('.js-msg-email');
 const regexLinkedin = document.querySelector('.js-msg-linkedin');
 const regexGit = document.querySelector('.js-msg-git');
 const expresionEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-const expresionUrl = /[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/;
+const expresionUrl = /^[A-Za-z]+[A-Za-z0-9]*(?:[-][A-Za-z0-9]+)*$/;
 const expressionPhone = /(?:([+]\d{1,4})[-.\s]?)?(?:[(](\d{1,3})[)][-.\s]?)?(\d{1,4})[-.\s]?(\d{1,4})[-.\s]?(\d{1,9})/g;
 const buttonReset = document.querySelector('.js-btn-reset');
 const colChecked = document.querySelector('.js-onecol');
@@ -21,3 +21,7 @@ const inputPhone = document.querySelector('.js-input-phone');
 const inputEmail = document.querySelector('.js-input-email');
 const inputLinkedin = document.querySelector('.js-input-linkedin');
 const inputGithub = document.querySelector('.js-input-github');
+const localInput = localStorage.getItem('newCard');
+const cardLink = document.querySelector('.js-cardLink');
+const createError = document.querySelector('.js-create-error'); 
+

@@ -31,7 +31,7 @@ function changeComplete(event){
         emailPreview.href = 'mailto:' + valueInput;
         regexEmail.innerHTML = '';
       }else{
-        regexEmail.innerHTML = 'La dirección de correo introducida no es válida';
+        regexEmail.innerHTML = 'La dirección de correo introducida no es válida.';
       }         
 
     } else if(input === 'phone'){
@@ -44,26 +44,18 @@ function changeComplete(event){
         
     } else if(input === 'linkedin'){
       if(expresionUrl.test(valueInput)=== true){
-        if((valueInput.includes('http://')) || (valueInput.includes('https://'))){
-          linkedinPreview.href = valueInput;
-        }else{
-          linkedinPreview.href = 'http://'+ valueInput;
-        }
-        regexLinkedin.innerHTML = '';
+          linkedinPreview.href = 'http://linkedin.com/in/' + valueInput;
+          regexLinkedin.innerHTML = '';
       }else {
-        regexLinkedin.innerHTML = 'La url introducida no es válida.';
+        regexLinkedin.innerHTML = 'El nombre de usuario no es válido.';
       } 
 
     } else if(input === 'github'){
       if(expresionUrl.test(valueInput)=== true){
-        if((valueInput.includes('http://')) || (valueInput.includes('https://'))){
-          githubPreview.href = valueInput;
-        }else{
-          githubPreview.href = 'http://'+ valueInput;
-        }
-        regexGit.innerHTML = '';
+          githubPreview.href = 'http://github.com/'+ valueInput;
+          regexGit.innerHTML = '';
       }else {
-        regexGit.innerHTML = 'La url introducida no es válida.';
+        regexGit.innerHTML = 'El nombre de usuario no es válido.';
       } 
     } 
   }
