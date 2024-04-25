@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
       
     <link rel="icon" href="./images/favicon.png" />
-    <link rel="stylesheet" href="./assets/main-aadd1d08.css">
+    <link rel="stylesheet" href="./assets/main-af9acb79.css">
   </head>
 
   <body>
     <header class="page__header">
-    <img class="page__header--img" src="./images/logo-awesome-profile-cards.svg" alt="Logo de Awesome Profile Cards">
+    <a href="index.html"><img class="page__header--img" src="./images/logo-awesome-profile-cards.svg" alt="Logo de Awesome Profile Cards"></a>
 </header>
 
     
@@ -34,31 +34,31 @@
              <div class="card__rectangle--image js__profile-preview" ></div>
 
             <div class="card__rectangle--icons">
-                <span><a href="#" class="icon js__preview_phone"><i class="fa-solid fa-mobile-screen-button"></i></a></span>
-                <span><a href="#" class="icon js__preview_email"><i class="fa-regular fa-envelope"></i></a></span>
-                <span><a href="#" class="icon js__preview_linkedn"><i class="fa-brands fa-linkedin-in"></i></a></span>
-                <span><a href="#" class="icon js__preview_github"><i class="fa-brands fa-github-alt"></i></a></span>
+                <span><a href="" class="icon js__preview_phone" target="_blank"><i class="fa-solid fa-mobile-screen-button"></i></i></a></span>
+                <span><a href="" class="icon js__preview_email" target="_blank"><i class="fa-regular fa-envelope"></i></i></a></span>
+                <span><a href="" class="icon js__preview_linkedn" target="_blank"><i class="fa-brands fa-linkedin-in" ></i></i></a></span>
+                <span><a href="" class="icon js__preview_github" target="_blank"><i class="fa-brands fa-github-alt"></i></a></span>
             </div>
         </article>
     </div>
 </section>
     <section>
     <form class= "form js__form" action="#"  method="POST">
-        <fieldset class="fieldset">
+        <fieldset class="fieldset js_fieldset">
     
-    <div class="legend">
+    <div class="legend js_collapsable-header">
         <legend class="legend-icon"><i class="fa-regular fa-object-ungroup">
             </i>
             DISEÑA</legend>
-        <button class=" legend-btn js-legendBtn"><i class="fa-solid fa-angle-up"></i></button>
+        <div class=" legend-btn js-legendBtn collapsable__btn--right"><i class="fa-solid fa-angle-up"></i></div>
         
     </div>
 
-    <section  class="fieldset__design js-fieldset-design">
+    <section  class="fieldset__design js-fieldset-design collapsable__content">
         <label for="palette">COLORES</label>
         <section class="fieldset__design--colors">
             <div class="color-one">
-                <input type="radio" value="1" name="palette" id="palette" class="onecol js-onecol" checked>
+                <input type="radio" value="1" name="palette" class="onecol js-onecol" checked>
                 <div class="color-one__1"></div>
                 <div class="color-one__2"></div>
                 <div class="color-one__3"></div>
@@ -80,21 +80,21 @@
 </fieldset>
 
 
-        <fieldset class="fieldset js-fieldset-complete">
-    <div class="legend">
+        <fieldset class="fieldset js-fieldset-complete js_fieldset collapsable--close">
+    <div class="legend js_collapsable-header">
         <legend class="legend-icon"><i class="fa-regular fa-keyboard"></i>
         RELLENA</legend>
-        <i  class= "fa-solid fa-angle-up">
+        <i  class= "fa-solid fa-angle-up collapsable__btn--right">
         </i>   
             
     </div>
-    <section class="complete">
+    <section class="complete collapsable__content">
         
         <label class="complete__label"  for="name">Nombre completo</label>
-        <input class="complete__input js-input-name" placeholder="Ej: Sally Jill" id="name" type="text" name="name"  />
+        <input class="complete__input js-input-name" placeholder="Ej: Sally Jill" id="name" type="text" name="name"  required/>
 
         <label class="complete__label"  for="job">Puesto</label>
-        <input class="complete__input js-input-job" placeholder="Ej: Front-end unicorn" id="job" type="text" name="job"  />
+        <input class="complete__input js-input-job" placeholder="Ej: Front-end unicorn" id="job" type="text" name="job"  required/>
 
         
         <label class="complete__label" for="photo">Imagen de perfil</label>
@@ -107,16 +107,20 @@
         
 
         <label class="complete__label"  for="email">Email</label>
-        <input class="complete__input js-input-email" placeholder="Ej: sally-hill@gmail.com" id="email" type="email" name="email"  />
+        <input class="complete__input js-input-email" placeholder="Ej: sally-hill@gmail.com" id="email" type="email" name="email" required/>
+        <p class="complete__regex js-msg-email"></p>
 
         <label class="complete__label "  for="phone">Teléfono</label>
-        <input class="complete__input js-input-phone" placeholder="Ej: 555-555-555" id="phone" type="tel" name="tel"  />
+        <input class="complete__input js-input-phone" placeholder="Ej: 555-555-555" id="phone" type="tel" name="tel" required/>
+        <p class="complete__regex js-msg-phone"></p>
 
         <label class="complete__label"  for="linkedin">Linkedin</label>
-        <input class="complete__input js-input-linkedin" placeholder="Ej: Linkedin.com/in/sally.hill" id="linkedin" type="text" name="linkedin"  />
+        <input class="complete__input js-input-linkedin" placeholder="Ej: sally-hill" id="linkedin" type="text" name="linkedin" required/>
+        <p class="complete__regex js-msg-linkedin"></p>
 
         <label class="complete__label"  for="github">Github</label>
-        <input class="complete__input js-input-github" placeholder="Ej: @sally-hill" id="github" type="text" name="github"  />
+        <input class="complete__input js-input-github" placeholder="Ej: sally-hill" id="github" type="text" name="github" required/>
+        <p class="complete__regex js-msg-git"></p>
 
         
     </section>
@@ -124,28 +128,29 @@
 
 
         
-<fieldset class="fieldset js-fieldset-share">
-    <div class="legend">
+<fieldset class="fieldset js-fieldset-share js_fieldset collapsable--close">
+    <div class="legend js_collapsable-header">
         <legend class="legend-icon"><i class="fa-solid fa-share-nodes">
             </i>
             COMPARTE</legend>
-        <i class="fa-solid fa-angle-up">
+        <i class="fa-solid fa-angle-up collapsable__btn--right">
         </i>
     </div>
     
-    <section class="section-create">
-        <button class="btn-create">
+    <section class="section-create collapsable__content">
+        <button class="btn-create js_btnCreate">
             <i class="fa-regular fa-address-card"></i> CREAR TARJETA
             </button>
+            <p class=" complete__regex js-create-error "></p>
     </section>
     
     <!--La tarjeta ha sido creada-->
     
-    <section class=" "> 
+    <section class="collapsed js-section-created"> 
         <div class="cardcreated">
             <p class="cardcreated__title">La tarjeta ha sido creada:</p>
             <span class="cardcreated__link">
-                <a class="cardcreated__link--twitter" href="https://dev.adalab.es/card/16766402168739246" target="_blank">https://dev.adalab.es/card/16766402168739246</a>
+                <a class="cardcreated__link--twitter js-cardLink" href="https://dev.adalab.es/card/16766402168739246" target="_blank">https://dev.adalab.es/card/16766402168739246</a>
             </span>
             <button class="cardcreated__x">
                 <i class="fa-brands fa-x-twitter"></i>
