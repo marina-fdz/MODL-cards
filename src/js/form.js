@@ -120,12 +120,20 @@ function valuePreviewReset (){
   profilePreview.style.backgroundImage = `url(https://ih0.redbubble.net/image.1615061405.6202/raf,360x360,075,t,fafafa:ca443f4786.jpg)`;
 }
 
+function shareCardReset(){
+  sectionCreated.classList.add('collapsed');
+  btnCreate.classList.remove('btn-create_grey');
+  btnCreate.classList.add('btn-create');
+  btnCreate.classList.remove('btn-create_grey');
+  createError.innerHTML = '';
+}
+
 function handleReset (event){
   cardDataReset(cardData);
   valueInputReset();
   valuePreviewReset();
   checkedReset();
-
+  shareCardReset();
 }
 
 
