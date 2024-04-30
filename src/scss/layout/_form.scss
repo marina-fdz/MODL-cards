@@ -17,10 +17,14 @@
         color: $titleColor;
         border: none;
         border-bottom: 1px solid $lineColor;
+        &:last-child{
+            border: none;
+        }
         
     }
     
     & .legend{
+        cursor: pointer;
         display: flex;
         justify-content: space-between;
         font-size: 18px;
@@ -55,13 +59,6 @@
 
 }
 
-// .legend-btn-closed{
-//     border: none;
-//     background: none;
-//     font-size: 18px;
-//     color: $titleColor;
-//     // transform: rotate(180deg);
-// }
 
 
 //design
@@ -106,7 +103,6 @@
 
         & .onecol {
             transform: scale(1.2);
-            // appearance: none;
             cursor: pointer;
         }
 
@@ -203,6 +199,7 @@
             margin-bottom: 20px;
 
             &-input{
+                cursor: pointer;
                 position: absolute;
                 top:10%;
                 left: 0;
@@ -210,6 +207,7 @@
             }
             
             &-paragraph{
+                cursor: pointer;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -220,7 +218,11 @@
                 width: 140px;
                 height: 30px;
                 padding-bottom: 3px;
-                
+                z-index: 2;
+
+                &:hover{
+                    background-color: $mediumColor;
+                }
             }
 
             &-square{
@@ -267,6 +269,10 @@
         color: $white;
         margin-top: 30px;
         box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+        cursor: pointer;
+        &:hover{
+            background-color: $mediumColor;
+        }
     }
 
     & .btn-create_grey{
