@@ -23,6 +23,7 @@ const btnCreate = document.querySelector ('.js_btnCreate');
 const sectionCreated = document.querySelector('.js-section-created');
 const cardLink = document.querySelector('.js-cardLink');
 const createError = document.querySelector('.js-create-error'); 
+const xShare = document.querySelector('.js-x-btn');
 
 
 // Card Preview

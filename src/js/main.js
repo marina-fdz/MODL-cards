@@ -6,7 +6,7 @@ import "./handle-data.js";
 import "./get-avatar.js";
 import "./collapsable.js";
 import "./reset.js"
-import "./create-card.js";
 import "./share.js";
+import "./create-card.js";
 import "./init.js";
 

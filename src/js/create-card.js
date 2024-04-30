@@ -15,6 +15,7 @@ const postData = () =>{
             cardLink.innerHTML = dataResponse.cardURL;
             cardLink.href = dataResponse.cardURL;
             createError.innerHTML = '';
+            shareX(dataResponse);
             
         }else if(dataResponse.error.toLowerCase().includes('mandatory field')){
             createError.innerHTML = 'Es necesario rellenar todos los campos.';          
