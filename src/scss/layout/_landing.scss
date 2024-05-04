@@ -8,16 +8,14 @@
     min-height:calc(100vh - 11rem);
     @media all and (width > 768px){
         min-height:calc(100vh - 6rem);
- 
+        
     }
 
-   
-
     &__image{       
-        height: 63px;
+        width: 25rem;
         margin: 95px 35px 0 35px;
         @media (min-width:768px){
-            height: 107px;
+            width: 41rem;
             margin: 80px 175px 31px 175px;
             padding: 2px 0 0;
         }
@@ -33,7 +31,7 @@
 
     &__title{
         padding-top:35px;
-        color: $backgreentitle;
+        color: $darkColor;
         font-family:  $secondaryFont;
         font-size: 19.2px;
         font-weight: 900;
@@ -50,7 +48,7 @@
         font-family: $mainFont;
         font-size: 12.8px;
         text-align: center;
-        color: $backtitle;
+        color: $darkColor;
         margin-bottom: 17.8px;
         @media (min-width:768px){
             font-size: 16px;
@@ -64,9 +62,8 @@
         height: 73.8px;
         margin: 17.8px 0 0.2px;
         padding: 15px 20px 9.8px 20px;
-        // opacity: 0.21;
         border-radius: 4px;
-        border: solid 1.6px $backgreentitle;
+        border: solid 1.6px $mediumColor;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
@@ -84,7 +81,7 @@
             font-family: $mainFont;
             font-size: 12.8px;
             text-align: center;
-            color:$backDarkPurple;
+            color:$titleColor;
             @media (min-width:768px){
                 width: 75px;
                 height: 61px;
@@ -100,13 +97,12 @@
         margin: 38px 75px 30px 65px;
         padding: 10px 20px;
         border-radius: 21px;
-        background-color: $backtitle;
-        border: 2px solid $backPurpleTilte;
+        background-color: $mediumColor;
         font-family: $mainFont;
         font-size: 16px;
         font-weight: 600;
         text-align: center;
-        color: $backPurpleTilte;
+        color: $white;
         text-decoration: none;
 
         &:hover{
@@ -120,19 +116,13 @@
         @media (height > 800px){
             margin-top: 186px;    
         }
-        // @media (min-width:1024px){
-        //     margin-top: 5%;
-            
-        // }
     }
 }
 
-
 .awesome{
-    color: $backDarkPurple;
+    color: $contrastColor;
     font-size: 22.4px;
     @media (min-width:768px){
         font-size: 28px;
     }
 }
-

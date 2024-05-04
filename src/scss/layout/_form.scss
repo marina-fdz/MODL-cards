@@ -336,6 +336,9 @@
         border-radius: 3px;
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
         font-family: $mainFont;
+        &:hover{
+            background-color: $contrastColor;
+        }
 
         & .x-button{
             color: $white;
