@@ -202,12 +202,11 @@
                 cursor: pointer;
                 position: absolute;
                 top:10%;
-                left: 0;
+                left: -130px;
                 opacity: 0;
             }
             
             &-paragraph{
-                cursor: pointer;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -218,11 +217,7 @@
                 width: 140px;
                 height: 30px;
                 padding-bottom: 3px;
-                z-index: 2;
-
-                &:hover{
-                    background-color: $mediumColor;
-                }
+                
             }
 
             &-square{
