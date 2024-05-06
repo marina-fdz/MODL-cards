@@ -1,6 +1,6 @@
 # Project-Promo-X-Module-2-Team-1 
 
-https://github.com/luciadelafuente/project-promo-x-module-2-team-1/assets/162286245/8b68f1e8-7707-4726-afce-a632f2669218
+https://github.com/luciadelafuente/project-promo-x-module-2-team-1/assets/162286245/00a56ca2-4d06-4cff-a61e-66a823c67af9
 
 ## **MOD^L CARDS** 
 
