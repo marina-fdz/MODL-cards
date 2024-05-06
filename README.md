@@ -2,7 +2,7 @@
 
 https://github.com/luciadelafuente/project-promo-x-module-2-team-1/assets/162286245/8b68f1e8-7707-4726-afce-a632f2669218
 
-## 🚧 **Proyecto en construcción** 🚧
+## **MOD^L CARDS** 
 
 Partiendo de un modelo facilitado a través de la plataforma de Zeplin(🔗 https://app.zeplin.io/project/5c94ca7ad58aef056fdd6a67), nos han encargado replicarlo y darle funcionalidad, aplicando lo aprendido hasta ahora con HTML, CSS y JavaScript.
 
