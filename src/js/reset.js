@@ -6,7 +6,7 @@ function checkedReset (){
   
   
   function cardDataReset (cardData){
-    cardData.palette = "";
+    cardData.palette = "1";
     cardData.name = "";
     cardData.job = "";
     cardData.phone = "";
@@ -54,6 +54,7 @@ function checkedReset (){
     valuePreviewReset();
     checkedReset();
     shareCardReset();
+    localStorage.removeItem('newCard');
   }
   
 

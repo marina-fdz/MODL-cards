@@ -34,7 +34,9 @@ function localDataInputs(){
       localDataInputs();
       localDataPreview();
       console.log(cardData);
-    } 
+    }
   }
   
   init();
+  
+  console.log(cardData);

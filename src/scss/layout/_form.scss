@@ -84,20 +84,20 @@
                 height: 25px;
                 padding: 10px 0;
                 margin-left: 5%;
-                background-color: $darkColor;
+                background-color: $dark-green-blue;
             }
         
             &__2 {
                 width: 30px;
                 height: 25px;
-                background-color: $mediumColor;
+                background-color: $dirty-blue;
             }
         
             &__3 {
                 width: 30px;
                 height: 25px;
                 padding: 10px 0;
-                background-color: $neutralColor;
+                background-color: $hospital-green;
             }
         }
 
@@ -219,10 +219,10 @@
                 height: 30px;
                 padding-bottom: 3px;
                 z-index: 2;
-
                 &:hover{
                     background-color: $mediumColor;
                 }
+                
             }
 
             &-square{
@@ -322,6 +322,9 @@
 
         &--twitter{
             color: $contrastColor;
+            &:hover{
+                color: $mediumColor;
+            }
         }
     }
 
@@ -336,6 +339,9 @@
         border-radius: 3px;
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
         font-family: $mainFont;
+        &:hover{
+            background-color: $contrastColor;
+        }
 
         & .x-button{
             color: $white;
