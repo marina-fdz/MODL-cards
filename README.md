@@ -1,6 +1,6 @@
 # Project-Promo-X-Module-2-Team-1 
 
-https://github.com/luciadelafuente/project-promo-x-module-2-team-1/assets/162286245/7d871b04-801a-471d-a151-5f219aa792b9
+https://github.com/luciadelafuente/project-promo-x-module-2-team-1/assets/162286245/8b68f1e8-7707-4726-afce-a632f2669218
 
 ## 🚧 **Proyecto en construcción** 🚧
 
