@@ -322,6 +322,9 @@
 
         &--twitter{
             color: $contrastColor;
+            &:hover{
+                color: $mediumColor;
+            }
         }
     }
 

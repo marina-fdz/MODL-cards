@@ -54,6 +54,7 @@ function checkedReset (){
     valuePreviewReset();
     checkedReset();
     shareCardReset();
+    localStorage.setItem('newCard', JSON.stringify(cardData));
   }
   
 
