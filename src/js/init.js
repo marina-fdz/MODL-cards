@@ -33,10 +33,8 @@ function localDataInputs(){
       cardData = JSON.parse(localData);
       localDataInputs();
       localDataPreview();
-      console.log(cardData);
     }
   }
   
   init();
   
-  console.log(cardData);

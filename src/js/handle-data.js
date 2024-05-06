@@ -70,7 +70,6 @@ const handleData = (event) =>{
   changeComplete(event);
   localStorage.setItem('newCard', JSON.stringify(cardData));
   shareCardReset();
-  console.log(cardData);
 }
 
 form.addEventListener('input', handleData);
