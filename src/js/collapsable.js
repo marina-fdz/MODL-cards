@@ -5,10 +5,6 @@ const handleCollapsable = (event) => {
     event.preventDefault();
     const clickedHeader = event.currentTarget;
     const clickedParent = clickedHeader.parentNode;
-
-    console.log(event.currentTarget);
-    console.log(clickedParent.parentNode);
-
     for(const parent of parentCollaps){
         if(parent === clickedParent){
             parent.classList.remove('collapsable--close');
