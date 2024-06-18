@@ -1,10 +1,9 @@
-# Project-Promo-X-Module-2-Team-1 
+# MOD^L CARDS
 
 https://github.com/luciadelafuente/project-promo-x-module-2-team-1/assets/162286245/00a56ca2-4d06-4cff-a61e-66a823c67af9
+ 
 
-## **MOD^L CARDS** 
-
-Partiendo de un modelo facilitado a través de la plataforma de Zeplin(🔗 https://app.zeplin.io/project/5c94ca7ad58aef056fdd6a67), nos han encargado replicarlo y darle funcionalidad, aplicando lo aprendido hasta ahora con HTML, CSS y JavaScript.
+Partiendo de un diseño facilitado por Adalab a través de la plataforma de Zeplin(🔗 https://app.zeplin.io/project/5c94ca7ad58aef056fdd6a67), nos han encargado replicarlo y darle funcionalidad, aplicando lo aprendido hasta ahora con HTML, CSS y JavaScript.
 
 ## 📁 **Acceso al proyecto**
 
@@ -42,4 +41,4 @@ Vamos a comenzar. La vista previa se irá actualizando a medida que vamos rellen
 
 ## ​👥​**Equipo**​👥​
 
-El proyecto fue creado por Diana, Lucía, Marina y Oti durante el Módulo 2 del bootcamp de Programación Web de Adalab.
+El proyecto fue realizado durante el Bootcamp de Programación Web de Adalab, por Diana, Lucía, Marina y Oti.
