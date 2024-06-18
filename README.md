@@ -41,4 +41,4 @@ Vamos a comenzar. La vista previa se irá actualizando a medida que vamos rellen
 
 ## ​👥​**Equipo**​👥​
 
-El proyecto fue realizado durante el Bootcamp de Programación Web de Adalab, por Diana, Lucía, Marina y Oti.
+El proyecto fue realizado durante el Bootcamp de Programación Web de Adalab, por [Diana](https://github.com/Gillotdiana), [Lucía](https://github.com/luciadelafuente), [Marina](https://www.github.com/marina-fdz) y [Oti](https://www.github.com/OtiliaNicola).
